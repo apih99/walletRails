@@ -2,10 +2,12 @@ class WalletsController < ApplicationController
     before_action :authenticate_user!
   
     def show
+      authorize current_user
       @transactions = current_user.transactions.order(created_at: :desc)
     end
   
     def update
+      authorize current_user
       amount = params[:amount].to_d
       service = TopUpService.new(current_user, amount)
   

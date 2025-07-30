@@ -16,6 +16,7 @@ module WalletTracker
     # Common ones are `templates`, `generators`, or `middleware`, for example.
     config.autoload_lib(ignore: %w[assets tasks])
     config.autoload_paths << Rails.root.join('app', 'services')
+    config.middleware.use Rack::Attack
 
 
     # Configuration for the application, engines, and railties goes here.
