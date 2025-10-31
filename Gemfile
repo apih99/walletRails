@@ -22,7 +22,7 @@ gem 'httparty'
 gem 'sidekiq'
 gem 'whenever', require: false
 gem 'tailwindcss-rails'
-gem 'foreman', '~> 0.87.2' 
+gem 'foreman', '~> 0.90.0' 
 gem 'pundit'
 gem 'rack-attack'
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
